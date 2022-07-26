@@ -1,0 +1,110 @@
+.page-header__wrapper {
+  background-color: $color-turquoise-blue;
+  background-image: url("../img/header-bg-desktop.jpg");
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 650px;
+  box-shadow: 0 4px 4px $color-black;
+
+  @media (max-width: $vp-1366 - 1) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 638px;
+    width: $vp-768;
+    background-image: url("../img/header-bg-tablet.jpg");
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 500px;
+    width: $vp-320;
+    background-image: url("../img/header-bg-mobile.jpg");
+  }
+}
+
+.page-header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 193px;
+  position: relative;
+
+  @media (max-width: $vp-1366 - 1) {
+    margin-bottom: 217px;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    margin-bottom: 134px;
+  }
+}
+
+.page-header__logo {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.page-header__logo-image {
+  fill: $color-alice-blue;
+
+  @media (max-width: $vp-1366 - 1) {
+    width: 38px;
+    height: 20px;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    width: 42px;
+    height: 22px;
+  }
+}
+
+.page-header__logo-wrapper {
+  line-height: 0;
+}
+
+.page-header__title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: $color-alice-blue;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+  margin-left: 95px;
+
+  @media (max-width: $vp-1366 - 1) {
+    font-size: 50px;
+    line-height: 61px;
+    margin-bottom: 13px;
+    margin-left: 0;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 11px;
+  }
+}
+
+.page-header__tagline {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-alice-blue;
+  margin: 0;
+  padding: 0;
+  margin-left: 95px;
+
+  @media (max-width: $vp-1366 - 1) {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 0;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

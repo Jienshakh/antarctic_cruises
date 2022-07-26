@@ -1,0 +1,80 @@
+.early-booking__wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 163px;
+  height: 555px;
+  background-image: url("../img/early-booking-desktop.jpg");
+  position: relative;
+
+  @media (max-width: $vp-1366 - 1) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 805px;
+    background-image: url("../img/early-booking-tablet.jpg");
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    height: 760px;
+    background-image: url("../img/early-booking-mobile.jpg");
+  }
+}
+
+.early-booking__title-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (max-width: $vp-1366 - 1) {
+    max-width: 450px;
+    top: -12px;
+    transform: translate(-50%, 0);
+    left: 50%;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    top: -8px;
+  }
+}
+
+.early-booking__title {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 13px;
+  max-width: 500px;
+
+  @media (max-width: $vp-1366 - 1) {
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 15px;
+  }
+}
+
+.early-booking__text {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  max-width: 355px;
+
+  @media (max-width: $vp-1366 - 1) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 267px;
+  }
+}

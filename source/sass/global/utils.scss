@@ -2,10 +2,7 @@
   position: relative;
 
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
 
   .header,
   .footer {
@@ -17,8 +14,8 @@
   }
 }
 
-.rouble {
-  font-family: $ff-rouble;
+.montserrat {
+  font-family: $ff-montserrat;
   /* stylelint-disable */
   text-transform: lowercase !important;
   font-weight: 400 !important;

@@ -1,0 +1,158 @@
+.main-nav {
+  @media (max-width: $vp-768 - 1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 285px;
+    min-height: 200px;
+    margin: auto;
+    margin-right: 0;
+    z-index: 1;
+  }
+}
+
+.main-nav__site-logo {
+  display: none;
+
+  @media (max-width: $vp-768 - 1) {
+    display: block;
+    position: absolute;
+    fill: $color-tangaroa;
+    top: 0;
+    left: 30px;
+    z-index: 3;
+    cursor: pointer;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: $vp-768 - 1) {
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 0;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.main-nav__site-menu--closed {
+  .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 24px;
+    height: 2px;
+    background-color: $color-alice-blue;
+    box-shadow: 0 5px 0 0 $color-alice-blue, 0 10px 0 0 $color-alice-blue;
+  }
+}
+
+@media (max-width: $vp-768 - 1) {
+  .main-nav__site-menu--closed {
+    .main-nav__site-item {
+      display: none;
+    }
+
+    .main-nav__site-list {
+      display: none;
+    }
+  }
+
+  .main-nav--nojs {
+    position: static;
+    min-height: 0;
+
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__site-item {
+      display: block;
+    }
+  }
+}
+
+.main-nav__site-menu--opened {
+  .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      top: 5px;
+      left: 0;
+      background-color: $color-tangaroa;
+      z-index: 3;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.main-nav__site-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  column-gap: 36px;
+  color: $color-alice-blue;
+
+  @media (max-width: $vp-1366 - 1) {
+    column-gap: 26px;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -20px;
+    right: -15px;
+    width: 100%;
+    margin: auto;
+    z-index: 1;
+    background-color: $color-alice-blue;
+    min-height: 568px;
+    padding-top: 75px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.main-nav__site-item {
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (max-width: $vp-1366 - 1) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    color: $color-tangaroa;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+
+    & + & {
+      margin-top: 18px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
