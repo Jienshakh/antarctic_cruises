@@ -732,10 +732,6 @@ button,
   margin-left: 95px;
 }
 
-.main-nav__site-logo {
-  display: none;
-}
-
 .main-nav__toggle {
   display: none;
 }
@@ -774,6 +770,10 @@ button,
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.main-nav__site-menu--opened .main-nav__site-logo {
+  display: none;
 }
 
 .main-nav__site-list {
@@ -1529,14 +1529,12 @@ button,
     background-image: url("../img/header-bg-tablet@2x.webp");
   }
 
-  .early-booking__wrapper {
-    background-image: url("../img/early-booking-tablet@2x.webp");
-  }
-}
-
-@media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1365px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1365px) and (min-resolution: 1.5dppx) {
   .advantage__wrapper {
     background-image: url("../img/advantage-tablet@2x.webp");
+  }
+
+  .early-booking__wrapper {
+    background-image: url("../img/early-booking-tablet@2x.webp");
   }
 }
 
@@ -1583,16 +1581,6 @@ button,
     z-index: 1;
   }
 
-  .main-nav__site-logo {
-    display: block;
-    position: absolute;
-    fill: #011c40;
-    top: 0;
-    left: 30px;
-    z-index: 3;
-    cursor: pointer;
-  }
-
   .main-nav__toggle {
     display: block;
     position: absolute;
@@ -1624,6 +1612,16 @@ button,
 
   .main-nav--nojs .main-nav__site-item {
     display: block;
+  }
+
+  .main-nav__site-menu--opened .main-nav__site-logo {
+    display: block;
+    position: absolute;
+    fill: #011c40;
+    top: 0;
+    left: 30px;
+    z-index: 3;
+    cursor: pointer;
   }
 
   .main-nav__site-list {
@@ -1861,14 +1859,12 @@ button,
     background-image: url("../img/header-bg-mobile@2x.webp");
   }
 
-  .early-booking__wrapper {
-    background-image: url("../img/early-booking-mobile@2x.webp");
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .advantage__wrapper {
     background-image: url("../img/advantage-mobile@2x.webp");
+  }
+
+  .early-booking__wrapper {
+    background-image: url("../img/early-booking-mobile@2x.webp");
   }
 }
 
@@ -1877,13 +1873,11 @@ button,
     background-image: url("../img/header-bg-desktop@2x.webp");
   }
 
-  .early-booking__wrapper {
-    background-image: url("../img/early-booking-desktop@2x.webp");
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   .advantage__wrapper {
     background-image: url("../img/advantage-desktop@2x.webp");
+  }
+
+  .early-booking__wrapper {
+    background-image: url("../img/early-booking-desktop@2x.webp");
   }
 }

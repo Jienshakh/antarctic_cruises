@@ -7,7 +7,7 @@
   height: 650px;
   box-shadow: 0 4px 4px $color-black;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina-dppx) {
     background-image: url("../img/header-bg-desktop@2x.webp");
   }
 
@@ -18,7 +18,7 @@
     // width: $vp-768;
     background-image: url("../img/header-bg-tablet.webp");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-tablet@2x.webp");
     }
   }
@@ -30,7 +30,7 @@
     // width: $vp-320;
     background-image: url("../img/header-bg-mobile.webp");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-mobile@2x.webp");
     }
   }

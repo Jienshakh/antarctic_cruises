@@ -11,20 +11,6 @@
   }
 }
 
-.main-nav__site-logo {
-  display: none;
-
-  @media (max-width: $vp-768 - 1) {
-    display: block;
-    position: absolute;
-    fill: $color-tangaroa;
-    top: 0;
-    left: 30px;
-    z-index: 3;
-    cursor: pointer;
-  }
-}
-
 .main-nav__toggle {
   display: none;
 
@@ -99,6 +85,20 @@
 
     &::after {
       transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav__site-logo {
+    display: none;
+
+    @media (max-width: $vp-768 - 1) {
+      display: block;
+      position: absolute;
+      fill: $color-tangaroa;
+      top: 0;
+      left: 30px;
+      z-index: 3;
+      cursor: pointer;
     }
   }
 }

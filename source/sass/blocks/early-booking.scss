@@ -7,7 +7,7 @@
   background-size: cover;
   position: relative;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina-dppx) {
     background-image: url("../img/early-booking-desktop@2x.webp");
   }
 
@@ -17,7 +17,7 @@
     height: 805px;
     background-image: url("../img/early-booking-tablet.webp");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina-dppx) {
       background-image: url("../img/early-booking-tablet@2x.webp");
     }
   }
@@ -28,7 +28,7 @@
     height: 760px;
     background-image: url("../img/early-booking-mobile.webp");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina-dppx) {
       background-image: url("../img/early-booking-mobile@2x.webp");
     }
   }
