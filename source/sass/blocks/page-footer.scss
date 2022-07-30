@@ -9,12 +9,12 @@
   @media (max-width: $vp-1366 - 1) {
     padding-top: 50px;
     padding-bottom: 50px;
-    max-width: 768px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   @media (max-width: $vp-768 - 1) {
     flex-direction: column;
-    max-width: 320px;
     padding-top: 40px;
     padding-bottom: 40px;
     align-items: flex-start;

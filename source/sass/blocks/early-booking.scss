@@ -3,21 +3,34 @@
   padding-bottom: 120px;
   padding-left: 163px;
   height: 555px;
-  background-image: url("../img/early-booking-desktop.jpg");
+  background-image: url("../img/early-booking-desktop.webp");
+  background-size: cover;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/early-booking-desktop@2x.webp");
+  }
 
   @media (max-width: $vp-1366 - 1) {
     padding-top: 100px;
     padding-bottom: 100px;
     height: 805px;
-    background-image: url("../img/early-booking-tablet.jpg");
+    background-image: url("../img/early-booking-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/early-booking-tablet@2x.webp");
+    }
   }
 
   @media (max-width: $vp-768 - 1) {
     padding-top: 65px;
     padding-bottom: 65px;
     height: 760px;
-    background-image: url("../img/early-booking-mobile.jpg");
+    background-image: url("../img/early-booking-mobile.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/early-booking-mobile@2x.webp");
+    }
   }
 }
 

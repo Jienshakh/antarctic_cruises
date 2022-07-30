@@ -19,6 +19,13 @@
   }
 }
 
+.location__map-wrapper {
+  @media (max-width: $vp-768 - 1) {
+    width: 100%;
+    margin: auto;
+  }
+}
+
 .location__map {
   @media (max-width: $vp-1366 - 1) {
     width: 324px;
@@ -26,7 +33,7 @@
   }
 
   @media (max-width: $vp-768 - 1) {
-    width: 290px;
+    width: 100%;
     height: 316px;
   }
 }
@@ -80,7 +87,7 @@
   }
 
   &--position::before {
-    background-image: url("../img/location.svg");
+    background-image: url("../img/svg/location.svg");
 
     @media (max-width: $vp-1366 - 1) {
       top: 5px;
@@ -88,6 +95,6 @@
   }
 
   &--phone::before {
-    background-image: url("../img/phone.svg");
+    background-image: url("../img/svg/phone.svg");
   }
 }

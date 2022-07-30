@@ -1,5 +1,6 @@
 .presentation__wrapper {
   display: flex;
+  align-items: center;
   padding-top: 120px;
   padding-bottom: 120px;
   column-gap: 88px;
@@ -20,12 +21,9 @@
 
 .presentation__left-column {
   max-width: 512px;
+  width: 100%;
   margin-top: auto;
   margin-bottom: auto;
-
-  @media (max-width: $vp-1366 - 1) {
-    max-width: 324px;
-  }
 
   @media (max-width: $vp-768 - 1) {
     margin-bottom: 33px;
@@ -58,4 +56,18 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+}
+
+.right-column {
+  max-width: 560px;
+  width: 100%;
+
+  @media (max-width: $vp-1366 - 1) {
+    max-width: 324px;
+    margin: auto;
+  }
+}
+
+.presentation__image {
+  width: 100%;
 }
