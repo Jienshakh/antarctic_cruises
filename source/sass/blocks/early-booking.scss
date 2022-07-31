@@ -3,6 +3,7 @@
   padding-bottom: 120px;
   padding-left: 163px;
   height: 555px;
+  background-color: $color-pattens-blue;
   background-image: url("../img/early-booking-desktop.webp");
   background-size: cover;
   position: relative;
@@ -51,7 +52,7 @@
   }
 }
 
-.early-booking__title {
+.early-booking__title-wrapper > h2 {
   font-size: 40px;
   line-height: 50px;
   font-weight: 700;
@@ -73,7 +74,7 @@
   }
 }
 
-.early-booking__text {
+.early-booking__title-wrapper > p {
   font-size: 18px;
   line-height: 27px;
   margin: 0;

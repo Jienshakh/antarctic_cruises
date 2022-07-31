@@ -1,5 +1,5 @@
 .page-header__wrapper {
-  background-color: $color-turquoise-blue;
+  background-color: $color-prussian-blue;
   background-image: url("../img/header-bg-desktop.webp");
   background-size: cover;
   padding-top: 35px;
@@ -33,6 +33,52 @@
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-mobile@2x.webp");
     }
+  }
+}
+
+.page-header__wrapper > h2 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: $color-alice-blue;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+  margin-left: 95px;
+
+  @media (max-width: $vp-1366 - 1) {
+    font-size: 50px;
+    line-height: 61px;
+    margin-bottom: 13px;
+    margin-left: 0;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 11px;
+  }
+}
+
+.page-header__wrapper > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-alice-blue;
+  margin: 0;
+  padding: 0;
+  margin-left: 95px;
+
+  @media (max-width: $vp-1366 - 1) {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 0;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -74,50 +120,4 @@
 
 .page-header__logo-wrapper {
   line-height: 0;
-}
-
-.page-header__title {
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
-  color: $color-alice-blue;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 11px;
-  margin-left: 95px;
-
-  @media (max-width: $vp-1366 - 1) {
-    font-size: 50px;
-    line-height: 61px;
-    margin-bottom: 13px;
-    margin-left: 0;
-  }
-
-  @media (max-width: $vp-768 - 1) {
-    font-size: 36px;
-    line-height: 45px;
-    margin-bottom: 11px;
-  }
-}
-
-.page-header__tagline {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: $color-alice-blue;
-  margin: 0;
-  padding: 0;
-  margin-left: 95px;
-
-  @media (max-width: $vp-1366 - 1) {
-    font-size: 18px;
-    line-height: 22px;
-    margin-left: 0;
-  }
-
-  @media (max-width: $vp-768 - 1) {
-    font-size: 16px;
-    line-height: 22px;
-  }
 }

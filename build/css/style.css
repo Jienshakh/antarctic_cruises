@@ -674,7 +674,7 @@ button,
 }
 
 .page-header__wrapper {
-  background-color: #63daff;
+  background-color: #00336c;
   background-image: url("../img/header-bg-desktop.webp");
   background-size: cover;
   padding-top: 35px;
@@ -682,6 +682,28 @@ button,
   height: 650px;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.page-header__wrapper > h2 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: #f9fbfd;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+  margin-left: 95px;
+}
+
+.page-header__wrapper > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f9fbfd;
+  margin: 0;
+  padding: 0;
+  margin-left: 95px;
 }
 
 .page-header__menu {
@@ -710,26 +732,8 @@ button,
   line-height: 0;
 }
 
-.page-header__title {
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
-  color: #f9fbfd;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 11px;
-  margin-left: 95px;
-}
-
-.page-header__tagline {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #f9fbfd;
-  margin: 0;
-  padding: 0;
-  margin-left: 95px;
+.main-nav__site-logo {
+  display: none;
 }
 
 .main-nav__toggle {
@@ -770,10 +774,6 @@ button,
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-}
-
-.main-nav__site-menu--opened .main-nav__site-logo {
-  display: none;
 }
 
 .main-nav__site-list {
@@ -879,7 +879,7 @@ button,
   margin-bottom: auto;
 }
 
-.presentation__title {
+.presentation__left-column h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -889,7 +889,7 @@ button,
   margin-bottom: 23px;
 }
 
-.presentation__text {
+.presentation__left-column p {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -901,7 +901,7 @@ button,
   width: 100%;
 }
 
-.presentation__image {
+.presentation__image-wrapper img {
   width: 100%;
 }
 
@@ -909,11 +909,12 @@ button,
   padding-top: 110px;
   padding-bottom: 120px;
   height: 562px;
+  background-color: #dbe6f4;
   background-image: url("../img/advantage-desktop.webp");
   background-size: cover;
 }
 
-.advantage__title {
+.advantage__wrapper > h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -947,9 +948,10 @@ button,
   content: "";
   width: 42px;
   height: 32px;
-  top: 30px;
+  top: 28px;
   left: 30px;
   background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 .advantage__item--liner::before {
@@ -964,10 +966,10 @@ button,
 
 .advantage__item--zodiac::before {
   background-image: url("../img/svg/zodiac.svg");
-  background-size: 45px 12px;
+  background-size: 45px 15px;
 }
 
-.advantage__item-title {
+.advantage__item > h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
@@ -994,7 +996,7 @@ button,
   padding: 110px 118px 120px;
 }
 
-.uncoming-cruises__title {
+.uncoming-cruises__wrapper > h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -1024,6 +1026,18 @@ button,
   color: #f9fbfd;
 }
 
+.uncoming-cruises__item-wrapper > p {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 30px;
+  bottom: 22px;
+  color: #f9fbfd;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
 .uncoming-cruises__item-wrapper:hover .uncoming-cruises__item-description {
   display: block;
   position: absolute;
@@ -1042,7 +1056,7 @@ button,
   box-sizing: border-box;
 }
 
-.uncoming-cruises__item-title {
+.uncoming-cruises__item-description > h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1051,7 +1065,7 @@ button,
   margin-bottom: 13px;
 }
 
-.uncoming-cruises__item-subtitle {
+.uncoming-cruises__item-description > h4 {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -1060,7 +1074,7 @@ button,
   margin-bottom: 1px;
 }
 
-.uncoming-cruises__item-text {
+.uncoming-cruises__item-description > p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1070,21 +1084,9 @@ button,
   margin-bottom: 11px;
 }
 
-.uncoming-cruises__item-image {
+.uncoming-cruises__item-wrapper img {
   display: block;
   height: 100%;
-}
-
-.uncoming-cruises__item-caption {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 30px;
-  bottom: 22px;
-  color: #f9fbfd;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
 }
 
 .early-booking__wrapper {
@@ -1092,6 +1094,7 @@ button,
   padding-bottom: 120px;
   padding-left: 163px;
   height: 555px;
+  background-color: #d8effe;
   background-image: url("../img/early-booking-desktop.webp");
   background-size: cover;
   position: relative;
@@ -1105,7 +1108,7 @@ button,
   transform: translateY(-50%);
 }
 
-.early-booking__title {
+.early-booking__title-wrapper > h2 {
   font-size: 40px;
   line-height: 50px;
   font-weight: 700;
@@ -1114,7 +1117,7 @@ button,
   max-width: 500px;
 }
 
-.early-booking__text {
+.early-booking__title-wrapper > p {
   font-size: 18px;
   line-height: 27px;
   margin: 0;
@@ -1131,7 +1134,7 @@ button,
   padding-top: 45px;
 }
 
-.booking-form__title {
+.booking-form__wrapper > h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1140,17 +1143,25 @@ button,
   margin-bottom: 26px;
 }
 
-.booking-form__input {
+.booking-form__wrapper input {
   width: 100%;
   padding: 12px 14px;
   border-color: transparent;
 }
 
-.booking-form__input ~ .booking-form__input {
+.booking-form__wrapper input ~ input {
   margin-top: 20px;
 }
 
-.booking-form__control {
+.booking-form__checkbox {
+  margin-top: 17px;
+  color: #f9fbfd;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.booking-form__checkbox label {
   position: relative;
 }
 
@@ -1164,7 +1175,11 @@ button,
   background-color: #f9fbfd;
 }
 
-.booking-form__control-input:checked + .booking-form__mark::before {
+.booking-form__label {
+  padding-left: 23px;
+}
+
+.booking-form__checkbox input:checked + .booking-form__mark::before {
   content: "";
   font-size: 30px;
   position: absolute;
@@ -1177,18 +1192,6 @@ button,
   color: #f9fbfd;
   width: 10px;
   height: 8px;
-}
-
-.booking-form__checkbox {
-  margin-top: 17px;
-  color: #f9fbfd;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 13px;
-}
-
-.booking-form__label {
-  padding-left: 23px;
 }
 
 .booking-form__button {
@@ -1207,6 +1210,23 @@ button,
   line-height: 0;
 }
 
+.location__map-wrapper {
+  position: relative;
+}
+
+.location__map-image-wrapper {
+  position: absolute;
+  top: 0;
+  width: 560px;
+  height: 306px;
+  z-index: -1;
+}
+
+.location__map-image-wrapper img {
+  position: absolute;
+  top: 0;
+}
+
 .location__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1220,7 +1240,7 @@ button,
   justify-content: center;
 }
 
-.location__title {
+.location__contacts > h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1228,7 +1248,7 @@ button,
   margin-bottom: 32px;
 }
 
-.location__address {
+.location__address-wrapper * {
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
@@ -1237,11 +1257,7 @@ button,
   position: relative;
 }
 
-.location__address--position {
-  margin-bottom: 21px;
-}
-
-.location__address::before {
+.location__address-wrapper *::before {
   position: absolute;
   content: "";
   width: 18px;
@@ -1251,11 +1267,15 @@ button,
   background-repeat: no-repeat;
 }
 
-.location__address--position::before {
+.location__address-wrapper p {
+  margin-bottom: 21px;
+}
+
+.location__address-wrapper p::before {
   background-image: url("../img/svg/location.svg");
 }
 
-.location__address--phone::before {
+.location__address-wrapper a::before {
   background-image: url("../img/svg/phone.svg");
 }
 
@@ -1285,6 +1305,19 @@ button,
     background-image: url("../img/header-bg-tablet.webp");
   }
 
+  .page-header__wrapper > h2 {
+    font-size: 50px;
+    line-height: 61px;
+    margin-bottom: 13px;
+    margin-left: 0;
+  }
+
+  .page-header__wrapper > p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 0;
+  }
+
   .page-header__menu {
     margin-bottom: 217px;
   }
@@ -1292,19 +1325,6 @@ button,
   .page-header__logo-image {
     width: 38px;
     height: 20px;
-  }
-
-  .page-header__title {
-    font-size: 50px;
-    line-height: 61px;
-    margin-bottom: 13px;
-    margin-left: 0;
-  }
-
-  .page-header__tagline {
-    font-size: 18px;
-    line-height: 22px;
-    margin-left: 0;
   }
 
   .main-nav__site-list {
@@ -1367,7 +1387,7 @@ button,
     padding-bottom: 93px;
   }
 
-  .presentation__title {
+  .presentation__left-column h2 {
     font-size: 26px;
     line-height: 29px;
     margin-bottom: 21px;
@@ -1378,6 +1398,26 @@ button,
     margin: auto;
   }
 
+  .presentation__image-wrapper {
+    position: relative;
+    width: 324px;
+    height: 264px;
+    overflow: hidden;
+  }
+
+  .presentation__image-wrapper img {
+    position: absolute;
+    width: 324px;
+    height: 264px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
   .advantage__wrapper {
     padding-top: 89px;
     padding-bottom: 100px;
@@ -1385,7 +1425,7 @@ button,
     height: 588px;
   }
 
-  .advantage__title {
+  .advantage__wrapper > h2 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 50px;
@@ -1432,7 +1472,7 @@ button,
     padding-bottom: 100px;
   }
 
-  .uncoming-cruises__title {
+  .uncoming-cruises__wrapper > h2 {
     font-size: 26px;
     line-height: 29px;
     margin-bottom: 54px;
@@ -1444,19 +1484,33 @@ button,
     gap: 30px;
   }
 
+  .uncoming-cruises__item-wrapper {
+    width: 309px;
+    height: 386px;
+    overflow: hidden;
+  }
+
+  .uncoming-cruises__item-wrapper > p {
+    left: 35px;
+    bottom: 27px;
+  }
+
   .uncoming-cruises__item-description {
     padding: 35px;
     padding-top: 30px;
   }
 
-  .uncoming-cruises__item-image {
+  .uncoming-cruises__item-wrapper img {
     width: 309px;
     height: 386px;
-  }
-
-  .uncoming-cruises__item-caption {
-    left: 35px;
-    bottom: 27px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .early-booking__wrapper {
@@ -1475,14 +1529,14 @@ button,
     left: 50%;
   }
 
-  .early-booking__title {
+  .early-booking__title-wrapper > h2 {
     font-size: 34px;
     line-height: 51px;
     text-align: center;
     margin-bottom: 5px;
   }
 
-  .early-booking__text {
+  .early-booking__title-wrapper > p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -1498,7 +1552,7 @@ button,
     bottom: 102px;
   }
 
-  .booking-form__title {
+  .booking-form__wrapper > h3 {
     line-height: 25px;
   }
 
@@ -1515,11 +1569,24 @@ button,
     height: 335px;
   }
 
-  .location__title {
+  .location__map-image-wrapper {
+    width: 324px;
+    height: 335px;
+    overflow: hidden;
+  }
+
+  .location__map-image-wrapper img {
+    width: 324px;
+    height: 335px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .location__contacts > h3 {
     margin-bottom: 25px;
   }
 
-  .location__address--position::before {
+  .location__address-wrapper p::before {
     top: 5px;
   }
 }
@@ -1550,6 +1617,17 @@ button,
     background-image: url("../img/header-bg-mobile.webp");
   }
 
+  .page-header__wrapper > h2 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 11px;
+  }
+
+  .page-header__wrapper > p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
   .page-header__menu {
     margin-bottom: 134px;
   }
@@ -1557,17 +1635,6 @@ button,
   .page-header__logo-image {
     width: 42px;
     height: 22px;
-  }
-
-  .page-header__title {
-    font-size: 36px;
-    line-height: 45px;
-    margin-bottom: 11px;
-  }
-
-  .page-header__tagline {
-    font-size: 16px;
-    line-height: 22px;
   }
 
   .main-nav {
@@ -1701,9 +1768,19 @@ button,
     margin-bottom: 33px;
   }
 
-  .presentation__title {
+  .presentation__left-column h2 {
     font-size: 24px;
     line-height: 27px;
+  }
+
+  .presentation__image-wrapper {
+    width: 290px;
+    height: 186px;
+  }
+
+  .presentation__image-wrapper img {
+    width: 290px;
+    height: 186px;
   }
 
   .advantage__wrapper {
@@ -1713,7 +1790,7 @@ button,
     height: 997px;
   }
 
-  .advantage__title {
+  .advantage__wrapper > h2 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 31px;
@@ -1732,7 +1809,7 @@ button,
     padding-right: 20px;
   }
 
-  .advantage__item-title {
+  .advantage__item > h3 {
     padding-right: 43px;
   }
 
@@ -1740,7 +1817,7 @@ button,
     padding: 65px 25px;
   }
 
-  .uncoming-cruises__title {
+  .uncoming-cruises__wrapper > h2 {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 35px;
@@ -1752,19 +1829,24 @@ button,
     gap: 30px;
   }
 
+  .uncoming-cruises__item-wrapper {
+    width: 270px;
+    height: 386px;
+  }
+
+  .uncoming-cruises__item-wrapper > p {
+    left: 25px;
+    bottom: 18px;
+  }
+
   .uncoming-cruises__item-description {
     padding: 35px 25px;
     padding-top: 29px;
   }
 
-  .uncoming-cruises__item-image {
+  .uncoming-cruises__item-wrapper img {
     width: 270px;
     height: 386px;
-  }
-
-  .uncoming-cruises__item-caption {
-    left: 25px;
-    bottom: 18px;
   }
 
   .early-booking__wrapper {
@@ -1778,13 +1860,13 @@ button,
     top: -8px;
   }
 
-  .early-booking__title {
+  .early-booking__title-wrapper > h2 {
     font-size: 24px;
     line-height: 31px;
     margin-bottom: 15px;
   }
 
-  .early-booking__text {
+  .early-booking__title-wrapper > p {
     font-size: 16px;
     line-height: 22px;
     max-width: 267px;
@@ -1802,7 +1884,7 @@ button,
     bottom: 65px;
   }
 
-  .booking-form__title {
+  .booking-form__wrapper > h3 {
     text-align: center;
   }
 
@@ -1843,13 +1925,27 @@ button,
     height: 316px;
   }
 
+  .location__map-image-wrapper {
+    width: 290px;
+    height: 316px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .location__map-image-wrapper img {
+    width: 290px;
+    height: 316px;
+  }
+
   .location__contacts {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
   }
 
-  .location__title {
+  .location__contacts > h3 {
     margin-bottom: 27px;
   }
 }

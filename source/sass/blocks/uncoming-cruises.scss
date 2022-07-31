@@ -12,7 +12,7 @@
   }
 }
 
-.uncoming-cruises__title {
+.uncoming-cruises__wrapper > h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -58,6 +58,39 @@
 .uncoming-cruises__item-wrapper {
   position: relative;
   color: $color-alice-blue;
+
+  @media (max-width: $vp-1366 - 1) {
+    width: 309px;
+    height: 386px;
+    overflow: hidden;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    width: 270px;
+    height: 386px;
+  }
+}
+
+.uncoming-cruises__item-wrapper > p {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 30px;
+  bottom: 22px;
+  color: $color-alice-blue;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (max-width: $vp-1366 - 1) {
+    left: 35px;
+    bottom: 27px;
+  }
+
+  @media (max-width: $vp-768 - 1) {
+    left: 25px;
+    bottom: 18px;
+  }
 }
 
 .uncoming-cruises__item-wrapper:hover {
@@ -90,7 +123,7 @@
   }
 }
 
-.uncoming-cruises__item-title {
+.uncoming-cruises__item-description > h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -99,7 +132,7 @@
   margin-bottom: 13px;
 }
 
-.uncoming-cruises__item-subtitle {
+.uncoming-cruises__item-description > h4 {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -108,7 +141,7 @@
   margin-bottom: 1px;
 }
 
-.uncoming-cruises__item-text {
+.uncoming-cruises__item-description > p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -118,39 +151,22 @@
   margin-bottom: 11px;
 }
 
-.uncoming-cruises__item-image {
+.uncoming-cruises__item-wrapper img {
   display: block;
   height: 100%;
 
   @media (max-width: $vp-1366 - 1) {
     width: 309px;
     height: 386px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
   }
 
   @media (max-width: $vp-768 - 1) {
     width: 270px;
     height: 386px;
-  }
-}
-
-.uncoming-cruises__item-caption {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 30px;
-  bottom: 22px;
-  color: $color-alice-blue;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-
-  @media (max-width: $vp-1366 - 1) {
-    left: 35px;
-    bottom: 27px;
-  }
-
-  @media (max-width: $vp-768 - 1) {
-    left: 25px;
-    bottom: 18px;
   }
 }

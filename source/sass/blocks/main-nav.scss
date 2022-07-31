@@ -11,6 +11,10 @@
   }
 }
 
+.main-nav__site-logo {
+  display: none;
+}
+
 .main-nav__toggle {
   display: none;
 
@@ -89,8 +93,6 @@
   }
 
   .main-nav__site-logo {
-    display: none;
-
     @media (max-width: $vp-768 - 1) {
       display: block;
       position: absolute;

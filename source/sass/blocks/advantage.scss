@@ -2,6 +2,7 @@
   padding-top: 110px;
   padding-bottom: 120px;
   height: 562px;
+  background-color: $color-solitude;
   background-image: url("../img/advantage-desktop.webp");
   background-size: cover;
 
@@ -32,7 +33,7 @@
   }
 }
 
-.advantage__title {
+.advantage__wrapper > h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -82,9 +83,10 @@
     content: "";
     width: 42px;
     height: 32px;
-    top: 30px;
+    top: 28px;
     left: 30px;
     background-repeat: no-repeat;
+    background-position-y: center;
 
     @media (max-width: $vp-1366 - 1) {
       left: 20px;
@@ -113,7 +115,7 @@
 
   &--zodiac::before {
     background-image: url("../img/svg/zodiac.svg");
-    background-size: 45px 12px;
+    background-size: 45px 15px;
 
     @media (max-width: $vp-1366 - 1) {
       background-size: 38px 13px;
@@ -130,7 +132,7 @@
   }
 }
 
-.advantage__item-title {
+.advantage__item > h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
