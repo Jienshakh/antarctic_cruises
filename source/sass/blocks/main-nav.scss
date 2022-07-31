@@ -1,5 +1,5 @@
 .main-nav {
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     position: absolute;
     top: 0;
     right: 0;
@@ -18,7 +18,7 @@
 .main-nav__toggle {
   display: none;
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     display: block;
     position: absolute;
     width: 13px;
@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: $vp-768 - 1) {
+@include vp-767 {
   .main-nav__site-menu--closed {
     .main-nav__site-item {
       display: none;
@@ -93,7 +93,9 @@
   }
 
   .main-nav__site-logo {
-    @media (max-width: $vp-768 - 1) {
+    display: none;
+
+    @include vp-767 {
       display: block;
       position: absolute;
       fill: $color-tangaroa;
@@ -113,11 +115,11 @@
   column-gap: 36px;
   color: $color-alice-blue;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     column-gap: 26px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -138,12 +140,12 @@
   font-size: 16px;
   line-height: 20px;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     font-size: 14px;
     line-height: 17px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     color: $color-tangaroa;
     font-size: 18px;
     line-height: 22px;

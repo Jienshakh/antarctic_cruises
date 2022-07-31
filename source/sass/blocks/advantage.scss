@@ -6,28 +6,28 @@
   background-image: url("../img/advantage-desktop.webp");
   background-size: cover;
 
-  @media (min-resolution: $retina-dppx) {
+  @include retina {
     background-image: url("../img/advantage-desktop@2x.webp");
   }
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     padding-top: 89px;
     padding-bottom: 100px;
     background-image: url("../img/advantage-tablet.webp");
     height: 588px;
 
-    @media (min-resolution: $retina-dppx) {
+    @include retina {
       background-image: url("../img/advantage-tablet@2x.webp");
     }
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     padding-top: 56px;
     padding-bottom: 65px;
     background-image: url("../img/advantage-mobile.webp");
     height: 997px;
 
-    @media (min-resolution: $retina-dppx) {
+    @include retina {
       background-image: url("../img/advantage-mobile@2x.webp");
     }
   }
@@ -42,13 +42,13 @@
   text-align: center;
   margin-bottom: 50px;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 50px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 31px;
@@ -62,11 +62,11 @@
   margin: 0;
   padding: 0;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     column-gap: 30px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     flex-direction: column;
     row-gap: 30px;
   }
@@ -88,7 +88,7 @@
     background-repeat: no-repeat;
     background-position-y: center;
 
-    @media (max-width: $vp-1366 - 1) {
+    @include vp-1365 {
       left: 20px;
       top: 25px;
       background-position: 0 40%;
@@ -99,7 +99,7 @@
     background-image: url("../img/svg/liner.svg");
     background-size: 27px 32px;
 
-    @media (max-width: $vp-1366 - 1) {
+    @include vp-1365 {
       background-size: 21px 26px;
     }
   }
@@ -108,7 +108,7 @@
     background-image: url("../img/svg/all-inclusive.svg");
     background-size: 38px 21px;
 
-    @media (max-width: $vp-1366 - 1) {
+    @include vp-1365 {
       background-size: 33px 19px;
     }
   }
@@ -117,16 +117,16 @@
     background-image: url("../img/svg/zodiac.svg");
     background-size: 45px 15px;
 
-    @media (max-width: $vp-1366 - 1) {
+    @include vp-1365 {
       background-size: 38px 13px;
     }
   }
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     padding: 71px 10px 20px 20px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: auto;
     padding-right: 20px;
   }
@@ -140,7 +140,7 @@
   margin: 0;
   margin-bottom: 9px;
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     padding-right: 43px;
   }
 }
@@ -153,7 +153,7 @@
   &--all-inclusive {
     padding-right: 20px;
 
-    @media (max-width: $vp-1366 - 1) {
+    @include vp-1365 {
       padding-right: 0;
     }
   }
@@ -161,7 +161,7 @@
   &--zodiac {
     padding-right: 50px;
 
-    @media (max-width: $vp-1366 - 1) {
+    @include vp-1365 {
       padding-right: 0;
     }
   }

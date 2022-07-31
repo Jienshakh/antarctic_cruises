@@ -7,30 +7,30 @@
   height: 650px;
   box-shadow: 0 4px 4px $color-black;
 
-  @media (min-resolution: $retina-dppx) {
+  @include retina {
     background-image: url("../img/header-bg-desktop@2x.webp");
   }
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     padding-top: 30px;
     padding-bottom: 30px;
     height: 638px;
     // width: $vp-768;
     background-image: url("../img/header-bg-tablet.webp");
 
-    @media (min-resolution: $retina-dppx) {
+    @include retina {
       background-image: url("../img/header-bg-tablet@2x.webp");
     }
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     padding-top: 20px;
     padding-bottom: 20px;
     height: 500px;
     // width: $vp-320;
     background-image: url("../img/header-bg-mobile.webp");
 
-    @media (min-resolution: $retina-dppx) {
+    @include retina {
       background-image: url("../img/header-bg-mobile@2x.webp");
     }
   }
@@ -46,14 +46,14 @@
   margin-bottom: 11px;
   margin-left: 95px;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     font-size: 50px;
     line-height: 61px;
     margin-bottom: 13px;
     margin-left: 0;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     font-size: 36px;
     line-height: 45px;
     margin-bottom: 11px;
@@ -70,13 +70,13 @@
   padding: 0;
   margin-left: 95px;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     font-size: 18px;
     line-height: 22px;
     margin-left: 0;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     font-size: 16px;
     line-height: 22px;
   }
@@ -89,11 +89,11 @@
   margin-bottom: 193px;
   position: relative;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     margin-bottom: 217px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     margin-bottom: 134px;
   }
 }
@@ -107,12 +107,12 @@
 .page-header__logo-image {
   fill: $color-alice-blue;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     width: 38px;
     height: 20px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: 42px;
     height: 22px;
   }

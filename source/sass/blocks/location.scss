@@ -5,13 +5,13 @@
   column-gap: 100px;
   line-height: 0;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     padding-top: 100px;
     padding-bottom: 100px;
     column-gap: 30px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     padding-top: 56px;
     padding-bottom: 59px;
     flex-wrap: wrap;
@@ -22,19 +22,19 @@
 .location__map-wrapper {
   position: relative;
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: 100%;
     margin: auto;
   }
 }
 
 .location__map {
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     width: 324px;
     height: 335px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: 100%;
     height: 316px;
   }
@@ -47,13 +47,13 @@
   height: 306px;
   z-index: -1;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     width: 324px;
     height: 335px;
     overflow: hidden;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: 290px;
     height: 316px;
     left: 50%;
@@ -65,13 +65,13 @@
   position: absolute;
   top: 0;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     width: 324px;
     height: 335px;
     object-fit: cover;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: 290px;
     height: 316px;
   }
@@ -82,7 +82,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     order: -1;
   }
 }
@@ -94,11 +94,11 @@
   margin: 0;
   margin-bottom: 32px;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     margin-bottom: 25px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     margin-bottom: 27px;
   }
 }
@@ -128,7 +128,7 @@
   &::before {
     background-image: url("../img/svg/location.svg");
 
-    @media (max-width: $vp-1366 - 1) {
+    @include vp-1365 {
       top: 5px;
     }
   }

@@ -6,7 +6,7 @@
   padding-bottom: 50px;
   align-items: center;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
@@ -29,7 +29,7 @@
 .page-footer__logo-image {
   fill: $color-alice-blue;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     width: 38px;
     height: 20px;
   }

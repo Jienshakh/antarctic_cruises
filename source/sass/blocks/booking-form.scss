@@ -7,7 +7,7 @@
   padding: 50px;
   padding-top: 45px;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -15,7 +15,7 @@
     bottom: 102px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: auto;
     transform: translate(0);
     left: 15px;
@@ -34,11 +34,11 @@
   margin: 0;
   margin-bottom: 26px;
 
-  @media (max-width: $vp-1366 - 1) {
+  @include vp-1365 {
     line-height: 25px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     text-align: center;
   }
 }
@@ -74,7 +74,7 @@
   top: -4px;
   background-color: $color-alice-blue;
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: 20px;
     height: 20px;
     top: 50%;
@@ -85,7 +85,7 @@
 .booking-form__label {
   padding-left: 23px;
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     padding-left: 26px;
     display: block;
     line-height: 12px;
@@ -110,7 +110,7 @@
 .booking-form__button {
   margin-top: 33px;
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     margin-top: 32px;
   }
 }
