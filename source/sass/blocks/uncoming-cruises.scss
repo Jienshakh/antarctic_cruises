@@ -55,9 +55,10 @@
   }
 }
 
-.uncoming-cruises__item-wrapper {
+.uncoming-cruises__item {
   position: relative;
   color: $color-alice-blue;
+
 
   @include vp-1365 {
     width: 309px;
@@ -71,7 +72,7 @@
   }
 }
 
-.uncoming-cruises__item-wrapper > p {
+.uncoming-cruises__item > p {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -93,7 +94,7 @@
   }
 }
 
-.uncoming-cruises__item-wrapper:hover {
+.uncoming-cruises__item:hover {
   .uncoming-cruises__item-description {
     display: block;
     position: absolute;
@@ -151,7 +152,7 @@
   margin-bottom: 11px;
 }
 
-.uncoming-cruises__item-wrapper img {
+.uncoming-cruises__item img {
   display: block;
   height: 100%;
 

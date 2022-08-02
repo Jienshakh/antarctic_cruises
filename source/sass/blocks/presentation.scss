@@ -12,7 +12,7 @@
     padding-bottom: 93px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     padding-top: 65px;
     padding-bottom: 65px;
     flex-direction: column;
@@ -25,7 +25,7 @@
   margin-top: auto;
   margin-bottom: auto;
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     margin-bottom: 33px;
   }
 }
@@ -45,7 +45,7 @@
     margin-bottom: 21px;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     font-size: 24px;
     line-height: 27px;
   }
@@ -76,7 +76,7 @@
     overflow: hidden;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: 290px;
     height: 186px;
   }
@@ -95,7 +95,7 @@
     object-fit: cover;
   }
 
-  @media (max-width: $vp-768 - 1) {
+  @include vp-767 {
     width: 290px;
     height: 186px;
   }

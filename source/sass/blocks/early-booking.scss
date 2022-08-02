@@ -1,54 +1,27 @@
 .early-booking__wrapper {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 163px;
+  padding-right: 163px;
   height: 555px;
-  background-color: $color-pattens-blue;
-  background-image: url("../img/early-booking-desktop.webp");
-  background-size: cover;
-  position: relative;
-
-  @include retina {
-    background-image: url("../img/early-booking-desktop@2x.webp");
-  }
+  display: grid;
+  grid-template-columns: 1fr 403px;
+  align-items: center;
 
   @include vp-1365 {
-    padding-top: 100px;
+    grid-template-columns: unset;
+    align-items: flex-start;
+    padding-top: 88px;
     padding-bottom: 100px;
     height: 805px;
-    background-image: url("../img/early-booking-tablet.webp");
-
-    @include retina {
-      background-image: url("../img/early-booking-tablet@2x.webp");
-    }
+    row-gap: 44px;
   }
 
   @include vp-767 {
-    padding-top: 65px;
+    padding-top: 58px;
     padding-bottom: 65px;
     height: 760px;
-    background-image: url("../img/early-booking-mobile.webp");
-
-    @include retina {
-      background-image: url("../img/early-booking-mobile@2x.webp");
-    }
-  }
-}
-
-.early-booking__title-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-
-  @include vp-1365 {
-    max-width: 450px;
-    top: -12px;
-    transform: translate(-50%, 0);
-    left: 50%;
-  }
-
-  @include vp-767 {
-    top: -8px;
+    row-gap: 31px;
   }
 }
 
@@ -61,6 +34,7 @@
   max-width: 500px;
 
   @include vp-1365 {
+    margin: auto;
     font-size: 34px;
     line-height: 51px;
     text-align: center;
@@ -82,8 +56,7 @@
 
   @include vp-1365 {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 
   @include vp-767 {

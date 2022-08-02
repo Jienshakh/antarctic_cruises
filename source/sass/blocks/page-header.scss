@@ -1,38 +1,18 @@
 .page-header__wrapper {
-  background-color: $color-prussian-blue;
-  background-image: url("../img/header-bg-desktop.webp");
-  background-size: cover;
   padding-top: 35px;
   padding-bottom: 35px;
   height: 650px;
-  box-shadow: 0 4px 4px $color-black;
-
-  @include retina {
-    background-image: url("../img/header-bg-desktop@2x.webp");
-  }
 
   @include vp-1365 {
     padding-top: 30px;
     padding-bottom: 30px;
     height: 638px;
-    // width: $vp-768;
-    background-image: url("../img/header-bg-tablet.webp");
-
-    @include retina {
-      background-image: url("../img/header-bg-tablet@2x.webp");
-    }
   }
 
   @include vp-767 {
     padding-top: 20px;
     padding-bottom: 20px;
     height: 500px;
-    // width: $vp-320;
-    background-image: url("../img/header-bg-mobile.webp");
-
-    @include retina {
-      background-image: url("../img/header-bg-mobile@2x.webp");
-    }
   }
 }
 
@@ -99,6 +79,8 @@
 }
 
 .page-header__logo {
+  line-height: 0;
+
   &:hover {
     cursor: pointer;
   }
@@ -116,8 +98,4 @@
     width: 42px;
     height: 22px;
   }
-}
-
-.page-header__logo-wrapper {
-  line-height: 0;
 }

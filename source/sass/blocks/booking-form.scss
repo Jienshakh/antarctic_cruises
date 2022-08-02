@@ -1,25 +1,17 @@
 .booking-form__wrapper {
   max-width: 403px;
-  position: absolute;
-  right: 163px;
-  top: 50px;
   background-color: $color-tangaroa;
   padding: 50px;
   padding-top: 45px;
 
   @include vp-1365 {
-    left: 50%;
-    transform: translateX(-50%);
+    padding-top: 50px;
     width: 100%;
-    top: auto;
-    bottom: 102px;
+    margin: auto;
   }
 
   @include vp-767 {
     width: auto;
-    transform: translate(0);
-    left: 15px;
-    right: 15px;
     max-width: none;
     padding: 38px 30px;
     bottom: 65px;
@@ -53,16 +45,14 @@
   }
 }
 
-.booking-form__checkbox {
+.booking-form label[for="personal-data"] {
+  position: relative;
+  display: block;
   margin-top: 17px;
   color: $color-alice-blue;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
-}
-
-.booking-form__checkbox label {
-  position: relative;
 }
 
 .booking-form__mark {
@@ -92,7 +82,7 @@
   }
 }
 
-.booking-form__checkbox input {
+.booking-form input[type="checkbox"] {
   &:checked + .booking-form__mark::before {
     content: "";
     font-size: 30px;
