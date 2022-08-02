@@ -840,21 +840,14 @@ button,
 
 .page-footer__logo-wrapper {
   line-height: 0;
+  margin-right: 40px;
 }
 
 .page-footer__logo-image {
   fill: #f9fbfd;
 }
 
-.page-footer__logo-wrapper {
-  margin-right: 40px;
-}
-
 .footer-nav {
-  margin-right: 349px;
-}
-
-.footer-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -864,6 +857,7 @@ button,
   column-gap: 35px;
   margin: 0;
   padding: 0;
+  margin-right: 349px;
 }
 
 .footer-nav__link {
@@ -1152,14 +1146,14 @@ button,
   max-width: 355px;
 }
 
-.booking-form__wrapper {
+.booking-form {
   max-width: 403px;
   background-color: #011c40;
   padding: 50px;
   padding-top: 45px;
 }
 
-.booking-form__wrapper > h3 {
+.booking-form > h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1168,13 +1162,13 @@ button,
   margin-bottom: 26px;
 }
 
-.booking-form__wrapper input {
+.booking-form input {
   width: 100%;
   padding: 12px 14px;
   border-color: transparent;
 }
 
-.booking-form__wrapper input ~ input {
+.booking-form input ~ input {
   margin-top: 20px;
 }
 
@@ -1381,23 +1375,20 @@ button,
     justify-content: space-between;
   }
 
+  .page-footer__logo-wrapper {
+    margin-right: 25px;
+  }
+
   .page-footer__logo-image {
     width: 38px;
     height: 20px;
   }
 
-  .page-footer__logo-wrapper {
-    margin-right: 25px;
-  }
-
   .footer-nav {
-    margin-right: 80px;
-  }
-
-  .footer-nav__list {
     -webkit-column-gap: 25px;
     -moz-column-gap: 25px;
     column-gap: 25px;
+    margin-right: 80px;
   }
 
   .footer-nav__link {
@@ -1574,13 +1565,13 @@ button,
     margin: auto;
   }
 
-  .booking-form__wrapper {
+  .booking-form {
     padding-top: 50px;
     width: 100%;
     margin: auto;
   }
 
-  .booking-form__wrapper > h3 {
+  .booking-form > h3 {
     line-height: 25px;
   }
 
@@ -1784,7 +1775,7 @@ button,
     height: 22px;
   }
 
-  .footer-nav__list {
+  .footer-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1910,14 +1901,14 @@ button,
     max-width: 267px;
   }
 
-  .booking-form__wrapper {
+  .booking-form {
     width: auto;
     max-width: none;
     padding: 38px 30px;
     bottom: 65px;
   }
 
-  .booking-form__wrapper > h3 {
+  .booking-form > h3 {
     text-align: center;
   }
 

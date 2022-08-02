@@ -1,4 +1,4 @@
-.booking-form__wrapper {
+.booking-form {
   max-width: 403px;
   background-color: $color-tangaroa;
   padding: 50px;
@@ -18,7 +18,7 @@
   }
 }
 
-.booking-form__wrapper > h3 {
+.booking-form > h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -35,7 +35,7 @@
   }
 }
 
-.booking-form__wrapper input {
+.booking-form input {
   width: 100%;
   padding: 12px 14px;
   border-color: transparent;

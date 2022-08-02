@@ -24,7 +24,13 @@
 
 .page-footer__logo-wrapper {
   line-height: 0;
+  margin-right: 40px;
+
+  @include vp-1365 {
+    margin-right: 25px;
+  }
 }
+
 
 .page-footer__logo-image {
   fill: $color-alice-blue;
