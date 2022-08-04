@@ -103,8 +103,9 @@
     height: 8px;
   }
 
-  &:focus + .booking-form__mark {
-    border-color: #dd3b3b;
+  &:focus + .booking-form__mark,
+  &:active + .booking-form__mark {
+    border: 1px solid $color-tangaroa;
   }
 }
 
