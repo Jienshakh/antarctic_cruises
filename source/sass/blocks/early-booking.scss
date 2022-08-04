@@ -3,7 +3,7 @@
   padding-bottom: 50px;
   padding-left: 163px;
   padding-right: 163px;
-  height: 555px;
+  min-height: 555px;
   display: grid;
   grid-template-columns: 1fr 403px;
   align-items: center;
@@ -13,14 +13,14 @@
     align-items: flex-start;
     padding-top: 88px;
     padding-bottom: 100px;
-    height: 805px;
+    min-height: 805px;
     row-gap: 44px;
   }
 
   @include vp-767 {
     padding-top: 58px;
     padding-bottom: 65px;
-    height: 760px;
+    min-height: 760px;
     row-gap: 31px;
   }
 }

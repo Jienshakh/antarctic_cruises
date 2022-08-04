@@ -70,6 +70,13 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  &:active,
+  &:focus {
+    border: 1px solid $color-tangaroa;
+    box-shadow: 0 0 0 1px $color-tangaroa;
+    outline: none;
+  }
 }
 
 .booking-form__label {
@@ -94,6 +101,10 @@
     color: $color-alice-blue;
     width: 10px;
     height: 8px;
+  }
+
+  &:focus + .booking-form__mark {
+    border-color: #dd3b3b;
   }
 }
 

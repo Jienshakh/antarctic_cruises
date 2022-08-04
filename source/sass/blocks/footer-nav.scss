@@ -1,5 +1,6 @@
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   column-gap: 35px;
   margin: 0;
@@ -16,23 +17,6 @@
     row-gap: 15px;
   }
 }
-
-// .footer-nav__list {
-//   display: flex;
-//   list-style-type: none;
-//   column-gap: 35px;
-//   margin: 0;
-//   padding: 0;
-
-//   @include vp-1365 {
-//     column-gap: 25px;
-//   }
-
-//   @include vp-767 {
-//     flex-direction: column;
-//     row-gap: 15px;
-//   }
-// }
 
 .footer-nav__link {
   color: $color-alice-blue;

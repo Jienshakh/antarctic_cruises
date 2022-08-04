@@ -1,18 +1,18 @@
 .advantage__wrapper {
   padding-top: 110px;
   padding-bottom: 120px;
-  height: 562px;
+  min-height: 562px;
 
   @include vp-1365 {
     padding-top: 89px;
     padding-bottom: 100px;
-    height: 588px;
+    min-height: 588px;
   }
 
   @include vp-767 {
     padding-top: 56px;
     padding-bottom: 65px;
-    height: 997px;
+    min-height: 997px;
   }
 }
 
@@ -40,13 +40,16 @@
 
 .advantage__list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   column-gap: 40px;
+  row-gap: 40px;
   margin: 0;
   padding: 0;
 
   @include vp-1365 {
     column-gap: 30px;
+    row-gap: 30px;
   }
 
   @include vp-767 {
@@ -57,7 +60,7 @@
 
 .advantage__item {
   padding: 81px 30px 30px 30px;
-  width: 33%;
+  width: 31%;
   background-color: $color-alice-blue;
   position: relative;
 
@@ -107,6 +110,7 @@
 
   @include vp-1365 {
     padding: 71px 10px 20px 20px;
+    width: 30%;
   }
 
   @include vp-767 {
