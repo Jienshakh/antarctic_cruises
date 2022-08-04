@@ -5,54 +5,62 @@
   padding-top: 45px;
 
   @include vp-1365 {
-    padding-top: 50px;
+    padding-top: 46px;
     width: 100%;
     margin: auto;
+    margin-top: 0;
   }
 
   @include vp-767 {
     width: auto;
     max-width: none;
-    padding: 38px 30px;
-    bottom: 65px;
+    padding: 35px 30px;
+    padding-bottom: 39px;
   }
 }
 
 .booking-form > h3 {
   font-weight: 500;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 150%;
   color: $color-alice-blue;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   @include vp-1365 {
     line-height: 25px;
+    margin-bottom: 28px;
   }
 
   @include vp-767 {
     text-align: center;
+    margin-bottom: 27px;
   }
 }
 
 .booking-form input {
   width: 100%;
-  padding: 12px 14px;
+  padding: 10px 14px;
   border-color: transparent;
+  line-height: 150%;
 
   & ~ input {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 }
 
 .booking-form label[for="personal-data"] {
   position: relative;
   display: block;
-  margin-top: 17px;
+  margin-top: 22px;
   color: $color-alice-blue;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
+
+  @include vp-767 {
+    margin-top: 18px;
+  }
 }
 
 .booking-form__mark {
@@ -103,15 +111,16 @@
     height: 8px;
   }
 
-  &:focus + .booking-form__mark {
-    border-color: #dd3b3b;
+  &:focus + .booking-form__mark,
+  &:active + .booking-form__mark {
+    border: 1px solid $color-tangaroa;
   }
 }
 
 .booking-form__button {
-  margin-top: 33px;
+  margin-top: 31px;
 
   @include vp-767 {
-    margin-top: 32px;
+    margin-top: 26px;
   }
 }

@@ -9,6 +9,7 @@
 
   @include vp-767 {
     padding: 65px 25px;
+    padding-top: 62px;
   }
 }
 
@@ -30,7 +31,7 @@
   @include vp-767 {
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 }
 
@@ -150,6 +151,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 11px;
+}
+
+.uncoming-cruises__item-description > a {
+  line-height: 150%;
+  padding: 10px 15px;
 }
 
 .uncoming-cruises__item img {

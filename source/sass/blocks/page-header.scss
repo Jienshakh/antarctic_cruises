@@ -4,7 +4,7 @@
   height: 650px;
 
   @include vp-1365 {
-    padding-top: 30px;
+    padding-top: 28px;
     padding-bottom: 30px;
     height: 638px;
   }
@@ -66,11 +66,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 193px;
+  margin-bottom: 197px;
   position: relative;
 
   @include vp-1365 {
-    margin-bottom: 217px;
+    margin-bottom: 215px;
   }
 
   @include vp-767 {
