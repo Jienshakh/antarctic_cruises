@@ -775,8 +775,8 @@ button,
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 4px;
+  top: 0;
+  left: 0;
   width: 24px;
   height: 2px;
   background-color: #f9fbfd;
@@ -791,8 +791,8 @@ button,
   position: absolute;
   width: 18px;
   height: 2px;
-  top: 10px;
-  left: 12px;
+  top: 6px;
+  left: 8px;
   background-color: #011c40;
   z-index: 3;
 }
@@ -1745,10 +1745,10 @@ button,
   .main-nav__toggle {
     display: block;
     position: absolute;
-    width: 13px;
-    height: 13px;
-    top: 0;
-    right: 15px;
+    width: 24px;
+    height: 12px;
+    top: 5px;
+    right: 0;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -1795,8 +1795,8 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     top: -20px;
-    right: -20px;
-    width: 100%;
+    right: -15px;
+    width: 98%;
     margin: auto;
     z-index: 1;
     background-color: #f9fbfd;
