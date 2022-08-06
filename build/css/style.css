@@ -1501,7 +1501,9 @@ button,
   .advantage__wrapper {
     padding-top: 91px;
     padding-bottom: 100px;
-    min-height: 588px;
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
   }
 
   .advantage__wrapper > h2 {
@@ -1606,7 +1608,9 @@ button,
     flex-direction: column;
     padding-top: 88px;
     padding-bottom: 100px;
-    min-height: 805px;
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
     row-gap: 53px;
   }
 
@@ -1879,8 +1883,7 @@ button,
 
   .advantage__wrapper {
     padding-top: 56px;
-    padding-bottom: 64px;
-    min-height: 997px;
+    padding-bottom: 67px;
   }
 
   .advantage__wrapper > h2 {
@@ -1946,7 +1949,6 @@ button,
   .early-booking__wrapper {
     padding-top: 58px;
     padding-bottom: 65px;
-    min-height: 760px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
