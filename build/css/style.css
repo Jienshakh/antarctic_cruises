@@ -714,6 +714,12 @@ button,
   pointer-events: none;
 }
 
+.btn:hover,
+.btn:focus {
+  outline: none;
+  opacity: 0.8;
+}
+
 .page-header__wrapper {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -1111,19 +1117,19 @@ button,
   line-height: 27px;
 }
 
-.uncoming-cruises__item:hover .uncoming-cruises__item-description {
+.uncoming-cruises__item:hover .uncoming-cruises__item-description,
+.uncoming-cruises__item:focus .uncoming-cruises__item-description {
   display: block;
-  position: absolute;
+  position: relative;
   background-color: #011c40;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  z-index: 3;
+  overflow: scroll;
+  z-index: 2;
 }
 
 .uncoming-cruises__item-description {
-  display: none;
   padding: 30px 25px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
