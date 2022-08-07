@@ -47,6 +47,19 @@
   & ~ input {
     margin-top: 18px;
   }
+
+  &:hover {
+    border: 2px solid $color-link-water;
+    box-shadow: inset 0 0 0 1px $color-link-water;
+    outline: none;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    border: 2px solid $color-maya-blue;
+    box-shadow: inset 0 0 0 1px $color-maya-blue;
+  }
 }
 
 .booking-form label[for="personal-data"] {
@@ -79,10 +92,17 @@
     transform: translateY(-50%);
   }
 
+  &:hover {
+    border: 1px solid $color-link-water;
+    box-shadow: inset 0 0 0 1px $color-link-water;
+    outline: none;
+  }
+
   &:active,
   &:focus {
-    border: 1px solid $color-tangaroa;
-    box-shadow: 0 0 0 1px $color-tangaroa;
+    cursor: pointer;
+    border: 1px solid $color-maya-blue;
+    box-shadow: inset 0 0 0 1px $color-maya-blue;
     outline: none;
   }
 }
