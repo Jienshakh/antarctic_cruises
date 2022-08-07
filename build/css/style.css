@@ -662,6 +662,10 @@ button,
   background-color: #011c40;
 }
 
+.page {
+  scroll-behavior: smooth;
+}
+
 .page__body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
