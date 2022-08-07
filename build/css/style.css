@@ -1772,8 +1772,22 @@ button,
     display: none;
   }
 
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+
   .main-nav--nojs .main-nav__item {
     display: block;
+  }
+
+  .main-nav--nojs .main-nav__logo {
+    display: block;
+    position: absolute;
+    fill: #011c40;
+    top: 0;
+    left: 35px;
+    z-index: 3;
+    cursor: pointer;
   }
 
   .main-nav--opened .main-nav__logo {

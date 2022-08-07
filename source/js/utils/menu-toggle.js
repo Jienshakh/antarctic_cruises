@@ -1,14 +1,16 @@
 const pageBody = document.querySelector('.page__body')
 const navMain = document.querySelector('.main-nav');
-const navToggle = document.querySelector('.main-nav__toggle');
 const headerLogo = document.querySelector('.page-header__logo');
 const headerTitle = document.querySelector('.page-header h2');
 const headerTagline = document.querySelector('.page-header p');
 
 navMain.classList.remove('main-nav--nojs');
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
+pageBody.addEventListener('click', function (event) {
+  const target = event.target;
+  if (target.closest('.main-nav__list') && !target.closest('.main-nav__toggle') || target.closest('.main-nav__logo')) {
+    event.stopPropagation();
+  } else if (target.closest('.main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
     headerLogo.style.display = 'none';

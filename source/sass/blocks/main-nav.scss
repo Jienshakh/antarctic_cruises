@@ -64,8 +64,22 @@
       display: none;
     }
 
+    .main-nav__list {
+      display: block;
+    }
+
     .main-nav__item {
       display: block;
+    }
+
+    .main-nav__logo {
+      display: block;
+      position: absolute;
+      fill: $color-tangaroa;
+      top: 0;
+      left: 35px;
+      z-index: 3;
+      cursor: pointer;
     }
   }
 }

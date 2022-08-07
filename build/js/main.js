@@ -601,13 +601,16 @@ var iosVhFix = function iosVhFix() {
 
 var pageBody = document.querySelector('.page__body');
 var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
 var headerLogo = document.querySelector('.page-header__logo');
 var headerTitle = document.querySelector('.page-header h2');
 var headerTagline = document.querySelector('.page-header p');
 navMain.classList.remove('main-nav--nojs');
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
+pageBody.addEventListener('click', function (event) {
+  var target = event.target;
+
+  if (target.closest('.main-nav__list') && !target.closest('.main-nav__toggle') || target.closest('.main-nav__logo')) {
+    event.stopPropagation();
+  } else if (target.closest('.main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
     headerLogo.style.display = 'none';
