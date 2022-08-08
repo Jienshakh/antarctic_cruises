@@ -7,7 +7,7 @@
   padding: 0;
   margin-right: 349px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     column-gap: 25px;
     margin-right: 80px;
   }
@@ -28,7 +28,7 @@
   font-size: 16px;
   line-height: 20px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 12px;
     line-height: 15px;
   }

@@ -3,7 +3,7 @@
   padding-bottom: 35px;
   height: 650px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 28px;
     padding-bottom: 30px;
     height: 638px;
@@ -26,7 +26,7 @@
   margin-bottom: 11px;
   margin-left: 95px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 50px;
     line-height: 61px;
     margin-bottom: 13px;
@@ -50,7 +50,7 @@
   padding: 0;
   margin-left: 95px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 18px;
     line-height: 22px;
     margin-left: 0;
@@ -69,7 +69,7 @@
   margin-bottom: 197px;
   position: relative;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 215px;
   }
 
@@ -90,7 +90,7 @@
 .page-header__logo-image {
   fill: $color-alice-blue;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 38px;
     height: 20px;
   }

@@ -1007,9 +1007,9 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style-type: none;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
+  -webkit-column-gap: 3.5%;
+  -moz-column-gap: 3.5%;
+  column-gap: 3.5%;
   row-gap: 40px;
   margin: 0;
   padding: 0;
@@ -1118,9 +1118,9 @@ button,
 }
 
 .uncoming-cruises__item:hover .uncoming-cruises__item-description,
-.uncoming-cruises__item:focus .uncoming-cruises__item-description {
+.uncoming-cruises__item:focus-within .uncoming-cruises__item-description {
   display: block;
-  position: relative;
+  position: absolute;
   background-color: #011c40;
   top: 0;
   width: 100%;
@@ -1130,6 +1130,7 @@ button,
 }
 
 .uncoming-cruises__item-description {
+  display: none;
   padding: 30px 25px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1422,7 +1423,7 @@ button,
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1023px) {
   .container {
     padding: 0 45px;
   }
@@ -1734,7 +1735,7 @@ button,
   }
 }
 
-@media (max-width: 1365px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 1365px) and (-o-max-device-pixel-ratio: 3/2), (max-width: 1365px) and (max-resolution: 144dpi) {
+@media (max-width: 1023px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-max-device-pixel-ratio: 3/2), (max-width: 1023px) and (max-resolution: 144dpi) {
   .background-image-container--header {
     background-image: url("../img/header-bg-tablet@2x.webp");
   }

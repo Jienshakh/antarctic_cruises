@@ -5,7 +5,7 @@
   column-gap: 100px;
   line-height: 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 100px;
     padding-bottom: 100px;
     column-gap: 30px;
@@ -29,7 +29,7 @@
 }
 
 .location__map {
-  @include vp-1365 {
+  @include vp-1023 {
     width: 324px;
     height: 335px;
   }
@@ -47,7 +47,7 @@
   height: 306px;
   z-index: -1;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 324px;
     height: 335px;
     overflow: hidden;
@@ -65,7 +65,7 @@
   position: absolute;
   top: 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 324px;
     height: 335px;
     object-fit: cover;
@@ -94,7 +94,7 @@
   margin: 0;
   margin-bottom: 32px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 25px;
   }
 
@@ -128,7 +128,7 @@
   &::before {
     background-image: url("../img/svg/location.svg");
 
-    @include vp-1365 {
+    @include vp-1023 {
       top: 5px;
     }
   }

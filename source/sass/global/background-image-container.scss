@@ -12,7 +12,7 @@
       background-image: url("../img/header-bg-desktop@2x.webp");
     }
 
-    @include vp-1365 {
+    @include vp-1023 {
       background-image: url("../img/header-bg-tablet.webp");
 
       @include retina {
@@ -38,7 +38,7 @@
       background-image: url("../img/advantage-desktop@2x.webp");
     }
 
-    @include vp-1365 {
+    @include vp-1023 {
       background-image: url("../img/advantage-tablet.webp");
 
       @include retina {
@@ -64,7 +64,7 @@
       background-image: url("../img/early-booking-desktop@2x.webp");
     }
 
-    @include vp-1365 {
+    @include vp-1023 {
       background-image: url("../img/early-booking-tablet.webp");
 
       @include retina {

@@ -3,7 +3,7 @@
   padding-bottom: 120px;
   min-height: 562px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 91px;
     padding-bottom: 100px;
     min-height: min-content;
@@ -24,7 +24,7 @@
   text-align: center;
   margin-bottom: 50px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 48px;
@@ -41,12 +41,12 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  column-gap: 40px;
+  column-gap: 3.5%;
   row-gap: 40px;
   margin: 0;
   padding: 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     column-gap: 28px;
     row-gap: 30px;
   }
@@ -73,7 +73,7 @@
     background-repeat: no-repeat;
     background-position-y: center;
 
-    @include vp-1365 {
+    @include vp-1023 {
       left: 20px;
       top: 25px;
       background-position: 0 40%;
@@ -84,7 +84,7 @@
     background-image: url("../img/svg/liner.svg");
     background-size: 27px 32px;
 
-    @include vp-1365 {
+    @include vp-1023 {
       background-size: 21px 26px;
     }
   }
@@ -93,7 +93,7 @@
     background-image: url("../img/svg/all-inclusive.svg");
     background-size: 38px 21px;
 
-    @include vp-1365 {
+    @include vp-1023 {
       background-size: 33px 19px;
     }
   }
@@ -102,12 +102,12 @@
     background-image: url("../img/svg/zodiac.svg");
     background-size: 45px 15px;
 
-    @include vp-1365 {
+    @include vp-1023 {
       background-size: 38px 13px;
     }
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 71px 10px 20px 21px;
     width: 30.5%;
   }
@@ -140,7 +140,7 @@
 .advantage__item--all-inclusive p {
   padding-right: 20px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-right: 0;
   }
 }
@@ -148,7 +148,7 @@
 .advantage__item--zodiac p {
   padding-right: 50px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-right: 0;
   }
 }
