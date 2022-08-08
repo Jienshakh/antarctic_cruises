@@ -1,4 +1,4 @@
-const pageBody = document.querySelector('.page__body')
+const pageBody = document.querySelector('.page__body');
 const navMain = document.querySelector('.main-nav');
 const headerLogo = document.querySelector('.page-header__logo');
 const headerTitle = document.querySelector('.page-header h2');
