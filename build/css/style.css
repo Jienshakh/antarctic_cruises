@@ -1944,6 +1944,10 @@ button,
     margin-bottom: 25px;
   }
 
+  .social {
+    margin-left: 0;
+  }
+
   .social__list {
     -webkit-column-gap: 13px;
     -moz-column-gap: 13px;

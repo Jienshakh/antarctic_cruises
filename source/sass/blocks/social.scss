@@ -1,5 +1,9 @@
 .social {
   margin-left: auto;
+
+  @include vp-767 {
+    margin-left: 0;
+  }
 }
 
 .social__list {
