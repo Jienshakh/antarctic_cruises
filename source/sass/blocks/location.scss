@@ -29,6 +29,7 @@
   @include vp-767 {
     width: 100%;
     margin: auto;
+    min-width: unset;
   }
 }
 

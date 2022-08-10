@@ -1893,7 +1893,7 @@ button,
     margin: auto;
     z-index: 1;
     background-color: #f9fbfd;
-    min-height: 568px;
+    min-height: 100vh;
     padding-top: 85px;
     padding-right: 25px;
     padding-left: 25px;
@@ -2130,6 +2130,7 @@ button,
   .location__map-wrapper {
     width: 100%;
     margin: auto;
+    min-width: unset;
   }
 
   .location__map {
