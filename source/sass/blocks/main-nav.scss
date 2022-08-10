@@ -21,13 +21,15 @@
   @include vp-767 {
     display: block;
     position: absolute;
-    width: 24px;
-    height: 12px;
-    top: 5px;
-    right: 0;
+    width: 30px;
+    height: 24px;
+    top: 0px;
+    right: -2px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    z-index: 3;
+    padding: 0;
   }
 }
 
@@ -35,8 +37,8 @@
   .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 4px;
     width: 24px;
     height: 2px;
     background-color: $color-alice-blue;
@@ -92,8 +94,8 @@
       position: absolute;
       width: 18px;
       height: 2px;
-      top: 6px;
-      left: 8px;
+      top: 10px;
+      left: 13px;
       background-color: $color-tangaroa;
       z-index: 3;
     }
