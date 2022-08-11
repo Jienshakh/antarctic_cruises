@@ -765,6 +765,8 @@ button,
 .page-header__logo {
   line-height: 0;
   margin-right: 15px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .page-header__logo--index:hover {

@@ -90,6 +90,7 @@
 .page-header__logo {
   line-height: 0;
   margin-right: 15px;
+  align-self: flex-start;
 
   &--index:hover {
     cursor: auto;
