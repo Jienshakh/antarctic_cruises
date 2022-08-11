@@ -601,10 +601,12 @@ var iosVhFix = function iosVhFix() {
 
 var pageBody = document.querySelector('.page__body');
 var navMain = document.querySelector('.main-nav');
+var headerMenu = document.querySelector('.page-header__menu');
 var headerLogo = document.querySelector('.page-header__logo');
 var headerTitle = document.querySelector('.page-header h2');
 var headerTagline = document.querySelector('.page-header p');
 navMain.classList.remove('main-nav--nojs');
+headerMenu.classList.remove('page-header__menu--nojs');
 pageBody.addEventListener('click', function (event) {
   var target = event.target;
 
@@ -711,3 +713,4 @@ window.scrollLock = new ScrollLock();
 /***/ })
 
 /******/ });
+//# sourceMappingURL=main.js.map

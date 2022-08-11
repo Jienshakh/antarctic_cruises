@@ -1,10 +1,12 @@
 const pageBody = document.querySelector('.page__body');
 const navMain = document.querySelector('.main-nav');
+const headerMenu = document.querySelector('.page-header__menu');
 const headerLogo = document.querySelector('.page-header__logo');
 const headerTitle = document.querySelector('.page-header h2');
 const headerTagline = document.querySelector('.page-header p');
 
 navMain.classList.remove('main-nav--nojs');
+headerMenu.classList.remove('page-header__menu--nojs');
 
 pageBody.addEventListener('click', function (event) {
   const target = event.target;

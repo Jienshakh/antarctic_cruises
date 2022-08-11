@@ -1785,7 +1785,8 @@ button,
   .page-header__wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 500px;
+    min-height: 500px;
+    height: unset;
   }
 
   .page-header__wrapper > h2 {
@@ -1801,6 +1802,16 @@ button,
 
   .page-header__menu {
     margin-bottom: 134px;
+  }
+
+  .page-header__menu--nojs {
+    margin-bottom: 40px;
+    -webkit-column-gap: 42px;
+    -moz-column-gap: 42px;
+    column-gap: 42px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .page-header__logo-image {
@@ -1852,20 +1863,36 @@ button,
 
   .main-nav--nojs .main-nav__list {
     display: block;
+    position: static;
+    min-height: 0;
+    padding: 0;
+    background-color: transparent;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 0;
   }
 
   .main-nav--nojs .main-nav__item {
     display: block;
   }
 
-  .main-nav--nojs .main-nav__logo {
-    display: block;
-    position: absolute;
-    fill: #011c40;
-    top: 0;
-    left: 35px;
-    z-index: 3;
+  .main-nav--nojs .main-nav__item + .main-nav__item {
+    margin-top: 18px;
+  }
+
+  .main-nav--nojs .main-nav__link {
+    color: #f9fbfd;
+    font-size: 14px;
+  }
+
+  .main-nav--nojs .main-nav__link:hover {
     cursor: pointer;
+    color: #87baff;
+  }
+
+  .main-nav--nojs .main-nav__logo {
+    display: none;
   }
 
   .main-nav--opened .main-nav__logo {

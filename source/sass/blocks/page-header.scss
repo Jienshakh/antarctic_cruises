@@ -12,7 +12,8 @@
   @include vp-767 {
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 500px;
+    min-height: 500px;
+    height: unset;
   }
 }
 
@@ -75,6 +76,14 @@
 
   @include vp-767 {
     margin-bottom: 134px;
+  }
+
+  &--nojs {
+    @include vp-767 {
+      margin-bottom: 40px;
+      column-gap: 42px;
+      align-items: flex-start;
+    }
   }
 }
 

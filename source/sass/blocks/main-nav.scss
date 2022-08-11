@@ -68,20 +68,34 @@
 
     .main-nav__list {
       display: block;
+      position: static;
+      min-height: 0;
+      padding: 0;
+      background-color: transparent;
+      width: fit-content;
+      margin-right: 0;
     }
 
     .main-nav__item {
       display: block;
     }
 
+    .main-nav__item + .main-nav__item {
+      margin-top: 18px;
+    }
+
+    .main-nav__link {
+      color: $color-alice-blue;
+      font-size: 14px;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-maya-blue;
+      }
+    }
+
     .main-nav__logo {
-      display: block;
-      position: absolute;
-      fill: $color-tangaroa;
-      top: 0;
-      left: 35px;
-      z-index: 3;
-      cursor: pointer;
+      display: none;
     }
   }
 }
