@@ -35,6 +35,12 @@
   }
 }
 
+.page-footer__logo {
+  &--index:hover {
+    cursor: auto;
+  }
+}
+
 
 .page-footer__logo-image {
   fill: $color-alice-blue;
@@ -49,7 +55,7 @@
     height: 22px;
   }
 
-  &:hover {
+  &:not(.page-footer__logo-image--index):hover {
     fill: $color-maya-blue;
   }
 }

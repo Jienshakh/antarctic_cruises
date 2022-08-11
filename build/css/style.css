@@ -767,15 +767,15 @@ button,
   margin-right: 15px;
 }
 
-.page-header__logo:hover {
-  cursor: pointer;
+.page-header__logo--index:hover {
+  cursor: auto;
 }
 
 .page-header__logo-image {
   fill: #f9fbfd;
 }
 
-.page-header__logo-image:hover {
+.page-header__logo-image:not(.page-header__logo-image--index):hover {
   fill: #87baff;
 }
 
@@ -871,11 +871,15 @@ button,
   margin-right: 40px;
 }
 
+.page-footer__logo--index:hover {
+  cursor: auto;
+}
+
 .page-footer__logo-image {
   fill: #f9fbfd;
 }
 
-.page-footer__logo-image:hover {
+.page-footer__logo-image:not(.page-footer__logo-image--index):hover {
   fill: #87baff;
 }
 
