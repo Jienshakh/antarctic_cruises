@@ -131,11 +131,13 @@
     top: 0;
     background-repeat: no-repeat;
   }
+
+  & + * {
+    margin-top: 21px;
+  }
 }
 
 .location__address-wrapper p {
-  margin-bottom: 21px;
-
   &::before {
     background-image: url("../img/svg/location.svg");
 
@@ -146,6 +148,8 @@
 }
 
 .location__address-wrapper a {
+  display: block;
+
   &::before {
     background-image: url("../img/svg/phone.svg");
   }

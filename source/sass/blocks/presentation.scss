@@ -61,6 +61,7 @@
 .right-column {
   max-width: 560px;
   width: 100%;
+  align-self: flex-start;
 
   @include vp-1023 {
     max-width: 324px;

@@ -871,6 +871,7 @@ button,
 .page-footer__logo-wrapper {
   line-height: 0;
   margin-right: 40px;
+  margin-bottom: auto;
 }
 
 .page-footer__logo--index:hover {
@@ -917,12 +918,16 @@ button,
 
 .social {
   margin-left: auto;
+  margin-bottom: auto;
+  margin-top: 10px;
 }
 
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style-type: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -930,6 +935,7 @@ button,
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
+  row-gap: 15px;
   margin: 0;
   padding: 0;
 }
@@ -988,6 +994,8 @@ button,
 .right-column {
   max-width: 560px;
   width: 100%;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .presentation__image-wrapper img {
@@ -1011,11 +1019,9 @@ button,
 }
 
 .advantage__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 31%);
   list-style-type: none;
   -webkit-column-gap: 3.5%;
   -moz-column-gap: 3.5%;
@@ -1027,7 +1033,6 @@ button,
 
 .advantage__item {
   padding: 81px 30px 26px 30px;
-  width: 31%;
   background-color: #f9fbfd;
   position: relative;
 }
@@ -1395,12 +1400,16 @@ button,
   background-repeat: no-repeat;
 }
 
-.location__address-wrapper p {
-  margin-bottom: 21px;
+.location__address-wrapper * + * {
+  margin-top: 21px;
 }
 
 .location__address-wrapper p::before {
   background-image: url("../img/svg/location.svg");
+}
+
+.location__address-wrapper a {
+  display: block;
 }
 
 .location__address-wrapper a::before {
@@ -1524,6 +1533,10 @@ button,
     line-height: 15px;
   }
 
+  .social {
+    margin-top: 1px;
+  }
+
   .social__list {
     -webkit-column-gap: 23px;
     -moz-column-gap: 23px;
@@ -1589,6 +1602,7 @@ button,
   }
 
   .advantage__list {
+    grid-template-columns: repeat(auto-fit, 30.5%);
     -webkit-column-gap: 28px;
     -moz-column-gap: 28px;
     column-gap: 28px;
@@ -1615,7 +1629,6 @@ button,
 
   .advantage__item {
     padding: 71px 10px 20px 21px;
-    width: 30.5%;
   }
 
   .advantage__item--all-inclusive p {
@@ -2039,6 +2052,7 @@ button,
   }
 
   .advantage__list {
+    grid-template-columns: repeat(auto-fit, 100%);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2047,7 +2061,6 @@ button,
   }
 
   .advantage__item {
-    width: auto;
     padding: 70px 20px 20px 20px;
   }
 
