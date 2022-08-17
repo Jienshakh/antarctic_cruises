@@ -723,7 +723,7 @@ button,
 .page-header__wrapper {
   padding-top: 35px;
   padding-bottom: 35px;
-  height: 650px;
+  min-height: 650px;
 }
 
 .page-header__wrapper > h2 {
@@ -863,9 +863,6 @@ button,
   color: #f9fbfd;
   padding-top: 50px;
   padding-bottom: 50px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .page-footer__logo-wrapper {
@@ -899,6 +896,7 @@ button,
   margin: 0;
   padding: 0;
   margin-right: 15px;
+  margin-top: 10px;
 }
 
 .footer-nav__item {
@@ -923,18 +921,18 @@ button,
 }
 
 .social__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 28px;
-  -moz-column-gap: 28px;
-  column-gap: 28px;
+  min-width: 109px;
+  -webkit-column-gap: 23px;
+  -moz-column-gap: 23px;
+  column-gap: 23px;
   row-gap: 15px;
   margin: 0;
   padding: 0;
@@ -1467,7 +1465,7 @@ button,
   .page-header__wrapper {
     padding-top: 28px;
     padding-bottom: 30px;
-    height: 638px;
+    min-height: 638px;
   }
 
   .page-header__wrapper > h2 {
@@ -1805,7 +1803,6 @@ button,
     padding-top: 20px;
     padding-bottom: 20px;
     min-height: 500px;
-    height: unset;
   }
 
   .page-header__wrapper > h2 {

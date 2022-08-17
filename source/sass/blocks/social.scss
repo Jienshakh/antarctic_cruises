@@ -13,11 +13,12 @@
 }
 
 .social__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
   align-items: center;
-  column-gap: 28px;
+  min-width: 109px;
+  column-gap: 23px;
   row-gap: 15px;
   margin: 0;
   padding: 0;
